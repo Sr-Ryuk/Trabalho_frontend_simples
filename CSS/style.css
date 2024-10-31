@@ -1,11 +1,18 @@
+/*-------------------------------------------------------------*/
+/* Resetando margin e padding do navegador */
+
 *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*-------------------------------------------------------------*/
+
+/* Definindo algumas estilizações globais */
+
 .cor-body{
-    background-color: #F0F0E8;
+    background-color: #88886060;
 }
 
 .text-center{
@@ -13,10 +20,15 @@
 }
 
 .cor-content{
-    background-color: #FCFCFA;
+    background-color: #6d6d526b;
 }
 
+/*-------------------------------------------------------------*/
+
+/* Estilizando cabeçalho e barra de navegação */
+
 .container-head{
+    background-color: #FCFCFA;
     border: 1px solid black;
     width: 50%;
     margin: 20px auto;
@@ -25,42 +37,90 @@
 
 .logo-element{
     border: 1px solid black;
+    margin-bottom: 15px;
 }
 
-nav{
-    margin-top: 10px;
-    border: 1px solid black;
-}
-
-nav a{
+nav a {
     text-decoration: none;
     padding: 10px;
+    position: relative;
+    color: #000;
+    margin: 0 15px;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/*-------------------------------------------------------------*/
+
+/* Estilizando container das sections */
+
+section{
+    margin-bottom: 60px;
 }
 
 .container-center{
     border: 1px solid black;
     width: 50%;
     /*Teste de posicionamento - REMOVER ANTES DA ENTREGA*/
-    height: 800px;
+    height: 900px;
     margin: 20px auto;
 }
+
+/*-------------------------------------------------------------*/
+
+/* Estilizando dados da primeira section */
 
 .card-primario{
     position: relative;
     margin: 30px auto;
-    border: 1px solid black;
+    border: 4px solid white;
     width: 80%;
-    /*TESTE DE POSICIONAMENTO*/
-    height: 40%;
+    background-color: rgb(51, 115, 131);
+    border-radius: 5px;
+    color: white;
 }
 
 .img-perfil{
     margin: 10px auto;
-    margin-bottom: 50px;
-    width: 40px;
-    height: 40px;
+    margin-bottom: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil img{
+    border-radius: 15px;
+}
+
+#title{
+    font-size: 25px;
 }
 
 .card-description{
     text-align: center;
 }
+
+.info{
+    margin: 20px;
+}
+
+.info .dado{
+    padding: 8px;
+}
+
+/*-------------------------------------------------------------*/
