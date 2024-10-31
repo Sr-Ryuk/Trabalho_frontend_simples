@@ -20,6 +20,21 @@
     border: 1px solid black;
     width: 50%;
     margin: 20px auto;
+    padding: 20px;
+}
+
+.logo-element{
+    border: 1px solid black;
+}
+
+nav{
+    margin-top: 10px;
+    border: 1px solid black;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
 }
 
 .container-center{
@@ -30,4 +45,22 @@
     margin: 20px auto;
 }
 
+.card-primario{
+    position: relative;
+    margin: 30px auto;
+    border: 1px solid black;
+    width: 80%;
+    /*TESTE DE POSICIONAMENTO*/
+    height: 40%;
+}
 
+.img-perfil{
+    margin: 10px auto;
+    margin-bottom: 50px;
+    width: 40px;
+    height: 40px;
+}
+
+.card-description{
+    text-align: center;
+}
