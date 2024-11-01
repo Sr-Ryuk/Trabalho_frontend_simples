@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Home</title>
+</head>
+
+<body class="cor-body">
+
+  <!-- Header / Navegação -->
+
+  <header>
+    <div class="container-head">
+      <div class="text-center logo-element">
+        <h1>LOGO</h1>
+      </div>
+      <nav class="text-center nav">
+        <a href="index.html">Home</a>
+        <a href="#">Seja meu amigo</a>
+        <a href="index.html">Projetos</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteudo da página -->
+
+  <article>
+
+
+
+  </article>
+
+  <!-- Script simples unico da página -->
+
+  <script>
+    // Animação de rolagem para ancoras da mesma pagina
+    $('.nav a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      var id = $(this).attr('href'),
+        targetOffset = $(id).offset().top;
+
+      $('html, body').animate({
+        scrollTop: targetOffset - 10
+      }, 500);
+    });
+  </script>
+
+</body>
+
+</html>

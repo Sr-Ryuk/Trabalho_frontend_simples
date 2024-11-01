@@ -12,7 +12,8 @@
 /* Definindo algumas estilizações globais */
 
 .cor-body{
-    background-color: #88886060;
+    background-color: #c0c07560;
+    color: rgb(255, 255, 255);
 }
 
 .text-center{
@@ -20,7 +21,7 @@
 }
 
 .cor-content{
-    background-color: #6d6d526b;
+    background-color: #000000da;
 }
 
 /*-------------------------------------------------------------*/
@@ -30,14 +31,18 @@
 .container-head{
     background-color: #FCFCFA;
     border: 1px solid black;
-    width: 50%;
+    width: 70%;
     margin: 20px auto;
     padding: 20px;
 }
 
 .logo-element{
-    border: 1px solid black;
+    color: rgb(255, 255, 255);
+    background-color: rgba(15, 15, 172, 0.671);
     margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 nav a {
@@ -69,14 +74,14 @@ nav a:hover::after {
 /* Estilizando container das sections */
 
 section{
-    margin-bottom: 60px;
+    margin-bottom: 150px;
 }
 
 .container-center{
     border: 1px solid black;
-    width: 50%;
+    width: 60%;
     /*Teste de posicionamento - REMOVER ANTES DA ENTREGA*/
-    height: 900px;
+    height: auto;
     margin: 20px auto;
 }
 
@@ -87,11 +92,11 @@ section{
 .card-primario{
     position: relative;
     margin: 30px auto;
-    border: 4px solid white;
+    /*border: 4px solid white;*/
     width: 80%;
-    background-color: rgb(51, 115, 131);
+    /*background-color: rgb(100, 110, 112);*/
     border-radius: 5px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .img-perfil{
@@ -116,11 +121,82 @@ section{
 }
 
 .info{
-    margin: 20px;
+    margin: 5px;
 }
 
 .info .dado{
     padding: 8px;
 }
+
+.info .link-contact{
+    text-decoration: none;
+    color: white;
+}
+
+.info .email{
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 42, 109, 0.486);
+}
+
+.info .email img{
+    filter: invert(100%);
+}
+
+.info .email:hover{
+    background-color: rgba(59, 59, 122, 0.486);
+}
+
+.info .email .link-text{
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.info .tel{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(42, 42, 109, 0.486);
+}
+
+.info .tel img{
+    filter: invert(100%);
+}
+
+.info .tel:hover{
+    background-color: rgba(59, 59, 122, 0.486);
+}
+
+
+.info .tel .link-text{
+    margin-left: 10px;
+}
+
+.content-resume{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.content-resume p{
+    margin-top: 10px;
+}
+
+.content-resume .video-prof{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*-------------------------------------------------------------*/
